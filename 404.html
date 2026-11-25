@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Page Not Found | UMSI</title>
+</head>
+<body>
+    <header>
+        <div class="skip">
+            <a href="#main">Skip to Main Content</a>
+        </div>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <h1>Engaged Learning Office</h1>
+    </header>
+    <main id="main" class="error-page">
+        <section>
+            <p class="error-number">404</p>
+            <h2>Page Not Found</h2>
+            <h3>Looks like you've lost your way!</h3>
+            <p>The page you are looking for may have moved, been renamed, or no longer exists.</p>
+            <p>Don't worry! You can return to the homepage and continue exploring UMSI's engaged learning resources.</p>
+            <a href="index.html" class="home-button"> Return to Homepage </a>
+        </section>
+    </main>
+    <footer>
+        <p>University of Michigan School of Information | Engaged Learning Office</p>
+        <p>&copy; <span id="current-year"></span>Regents of the University of Michigan</p>
+    </footer>
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Resumes</title>
+    <title>Preparing for Engaged Learning | UMSI</title>
 </head>
 <body>
-
   <header>
-
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
@@ -37,7 +35,7 @@
   <p>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
 </section>
 
-<section>
+<section class="five-card-grid">
   <h2>Phase 1: Preparing for the Experience</h2>
   <p>Before creating a solution, take time to understand the context, evaluate your team's readiness, and identify what you still need to learn.</p>
   <article>
@@ -96,7 +94,32 @@
     </ul>
   </article>
 </section>
-<section>
+<section class="readiness-checklist">
+    <h2>Project Readiness Checklist</h2>
+    <p>Before beginning your engaged learning experience, make sure you have considered the following steps. Check off each item as you complete it.</p>
+    <div class="checklist-items">
+      <label>
+          <input type="checkbox" class="readiness-item">
+          Reflect on your positionality and assumptions.
+      </label>
+      <label>
+          <input type="checkbox" class="readiness-item">
+          Research your community or partner organization.
+      </label>
+      <label>
+          <input type="checkbox" class="readiness-item">
+          Identify your team's skills and responsibilities.
+      </label>
+      <label>
+          <input type="checkbox" class="readiness-item">
+          Establish learning goals and project expectations.
+      </label>
+    </div>
+    <p id="checklist-progress" aria-live="polite">0 of 4 tasks completed.</p>
+    <progress id="readiness-progress" value="0" max="4">0%</progress>
+</section>
+
+<section class="card-grid">
   <h2>Phase 2: Starting the Experience</h2>
       <p>The starting phase is where abstract project ideas turn into structured, professional commitments.</p>
       <article>
@@ -123,13 +146,12 @@
 <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a prep page using the ELO content below" - this was after I had asked for content for the home page. " UMGPT. (2026). UMGPT ( GPT-5.6 Sol September 7th version) [Large language model]. -->
 </main>
 <footer>
-        <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
-      <address>
-        <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-      </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
-    </footer>
-    
+    <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
+    <address>
+      <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
+    </address>
+    <p>&copy; 2026 Regents of the University of Michigan</p>
+</footer>
+<script src="js/script.js" defer></script>
 </body>
-
 </html>

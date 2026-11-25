@@ -3,114 +3,113 @@ body {
 }
 
 header {
-    background-color: #00274C;
-    color: #ffffff;
-    padding: 1rem 0.75rem;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 0.75rem;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
+  background-color: #00274C;
+  color: #ffffff;
+  padding: 1rem 0.75rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.75rem;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .skip {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .skip a {
-    position: absolute;
-    top: -65px;
-    background-color: #ffffff;
+  position: absolute;
+  top: -65px;
+  background-color: #ffffff;
 }
 
 .skip a:focus {
-    left: 5%;
-    text-decoration: none;
-    color: #00274C;
-    padding: 0.5rem;
-    outline: none;
-    border: 2px solid #FFCB05;
-    top: 10px;
+  left: 5%;
+  text-decoration: none;
+  color: #00274C;
+  padding: 0.5rem;
+  border: 2px solid #FFCB05;
+  top: 10px;
+  z-index: 10;
 }
 
 header img {
-    max-width: 140px;
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 0.25rem;
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0.25rem;
 }
 
 header nav {
-    width: 100%;
+  width: 100%;
 }
 
 header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0.5rem;
-    width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
 }
 
 header nav li {
-    width: 100%;
+  width: 100%;
 }
 
 header nav a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: bold;
-    background-color: #264767;
-    border-radius: 4px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background-color: #264767;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 header nav a:hover, header nav a:focus {
-    outline: none;
-    border: 2px dotted #FFCB05;
+  outline: 2px dotted #FFCB05;
+  outline-offset: 2px;
 }
 
 header nav li.active a {
-    background-color: #FFCB05;
-    color: #00274C;
+  background-color: #FFCB05;
+  color: #00274C;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 header h1 {
-    font-size: 1.35rem;
-    margin: 0.5rem 0 0 0;
-    color: #ffffff;
-    line-height: 1.2;
+  font-size: 1.35rem;
+  margin: 0.5rem 0 0 0;
+  color: #ffffff;
+  line-height: 1.2;
 }
-
 footer {
-    background-color: #00274C;
-    color: #ffffff;
-    padding: 1.5rem 1rem;
-    margin-top: 2rem;
-    border-top: 4px solid #FFCB05;
-    text-align: center;
-}
-
-footer a {
-    color: #ffffff;
+  background-color: #00274C;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 4px solid #FFCB05;
+  text-align: center;
 }
 
 main {
   display: grid;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
   padding: 1rem 0.75rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -178,6 +177,7 @@ main li strong {
 
 main section:nth-of-type(3) {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -193,7 +193,7 @@ main section:nth-of-type(3) article {
 main section:nth-of-type(4) {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 main section:nth-of-type(4) article {
@@ -225,14 +225,13 @@ main article a {
 }
 
 main a:hover, main a:focus {
-  outline: none;
-  border: 2px dotted #00274C;
+  outline: 2px dotted #00274C;
+  outline-offset: 2px;
 }
 
 main article a:hover, main article a:focus {
   background-color: #FFCB05;
   color: #00274C;
-  border: 2px dotted #00274C;
 }
 
 main aside {
@@ -254,5 +253,214 @@ main aside div a {
 main aside div a:hover, main aside div a:focus {
   background-color: #00274C;
   color: #ffffff;
-  border: 2px dotted #FFCB05;
+  outline: 2px dotted #FFCB05;
+  outline-offset: 2px;
+}
+
+footer {
+  background-color: #00274C;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 4px solid #FFCB05;
+  text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    grid-template-columns: 150px 1fr;
+    column-gap: 1.5rem;
+    padding: 1.5rem;
+    justify-items: stretch;
+    text-align: left;
+  }
+
+  .skip {
+    grid-column: 1 / -1;
+  }
+
+  header img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  header nav {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  header nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  main section, main aside {
+    padding: 1.5rem;
+  }
+
+  main section:nth-of-type(3), main section:nth-of-type(4) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  main section:nth-of-type(3) > h2, main section:nth-of-type(3) > p, main section:nth-of-type(4) > h2, main section:nth-of-type(4) > p {
+    grid-column: 1 / -1;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    grid-template-columns: 170px 1fr;
+    padding: 1.5rem 2.5rem;
+  }
+
+  header img {
+    max-width: 150px;
+  }
+
+  header nav ul {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  header nav a {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 2rem;
+    gap: 2.5rem;
+  }
+
+  main section, main aside {
+    padding: 1.75rem;
+  }
+
+  main section:nth-of-type(3), main section:nth-of-type(4) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  footer {
+    padding: 1.75rem;
+  }
+
+  /* dif grid for yhe 5 info cards */
+  main section.five-card-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  main section.five-card-grid article {
+    grid-column: span 2;
+  }
+
+  main section.five-card-grid article:nth-of-type(4) {
+    grid-column: 2 / span 2;
+  }
+
+  main section.five-card-grid article:nth-of-type(5) {
+    grid-column: 4 / span 2;
+  } 
+}
+
+/*404*/
+.error-page {
+  min-height: 55vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.error-page section {
+  max-width: 650px;
+  width: 100%;
+  border-top: 5px solid #FFCB05;
+}
+
+.error-number {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #00274C;
+  margin: 0;
+}
+
+.error-page h2 {
+  font-size: 2rem;
+}
+
+.error-page h3 {
+  color: #003B73;
+}
+
+.home-button {
+  display: inline-block;
+  background-color: #00274C;
+  color: #ffffff;
+  padding: 0.85rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.home-button:hover, .home-button:focus {
+  background-color: #FFCB05;
+  color: #00274C;
+  outline: 2px solid #00274C;
+  outline-offset: 3px;
+}
+
+/* checklist fir the extra element*/
+.readiness-checklist {
+  background-color: #f0f4f8;
+  border-left: 5px solid #FFCB05;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.checklist-items {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.checklist-items label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.checklist-items input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  accent-color: #00274C;
+}
+
+#readiness-progress {
+  width: 100%;
+  height: 15px;
+  accent-color: #00274C;
 }
